@@ -16,14 +16,14 @@ export default function Product() {
   }, [id, product]);
 
   return (
-    <div className=" text-4xl text-red-500">
+    <div className="text-4xl text-red-500">
       {product ? (
-        <div className=" flex justify-center items-center">
+        <div className=" flex flex-col justify-center items-center bg-emerald-300 p-5 w-[400px] m-auto mt-4">
           <h1 className=" text-center text-3xl text-violet-700">
             {product.name}
           </h1>
           <p className=" text-lg text-white font-semibold text-center">{product.price}</p>
-          <p className=" tracking-tight leading-1 text-center font-semibold text-base text-amber-300">{product.description}</p>
+          <p className=" tracking-tight text-center font-semibold text-base text-slate-600">{product.description}</p>
         </div>
       ) : (
         <div className=" text-center text-5xl m-auto w-full h-full text-blue-400"> 

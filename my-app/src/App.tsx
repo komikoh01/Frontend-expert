@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Product from "./pages/product";
 import ShoppingCart from "./components/ShoopingCart";
 import Shopping from "./components/Shopping";
+import Stuffs from "./pages/stuffs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/products/:id" element={<Product />} />
         <Route path="/shopping" element={<Shopping />} />
         <Route path="/shoppingcart" element={<ShoppingCart />} />
+        <Route path="/stuffs" element={<Stuffs />} />
       </Routes>
     </BrowserRouter>
   );
