@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Products from "./pages/products";
 import NavBar from "./components/NavBar";
 import Product from "./pages/product";
+import ShoppingCart from "./components/ShoopingCart";
+import Shopping from "./components/Shopping";
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       <Routes>
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
-        <Route />
+        <Route path="/shopping" element={<Shopping />} />
+        <Route path="/shoppingcart" element={<ShoppingCart />} />
       </Routes>
     </BrowserRouter>
   );
