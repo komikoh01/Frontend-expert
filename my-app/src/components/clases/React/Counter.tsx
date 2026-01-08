@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDebounce } from "../../hooks/useDebouncedState";
+import { useDebounce } from "../../../hooks/useDebouncedState";
 
 function Counter() {
   // const [counter, setCounter] = useState<number>(0);

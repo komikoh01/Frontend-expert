@@ -1,3 +1,5 @@
+import TaskCounter from "../components/clases/Zustand/TaskCounter"
+import TaskList from "../components/clases/Zustand/TaskList"
 import { useCounterStore } from "../store/globalState1"
 
 export default function Stuffs() {
@@ -15,6 +17,11 @@ export default function Stuffs() {
           <p className=" text-xl font-bold text-white">{counter}</p>
           <button className=" px-3 py-1.5 bg-blue-600" onClick={increment}>increment</button>
         </div>
+      </div>
+      <div className=" mt-4 w-full h-full m-auto bg-slate-500 text-center tracking-wider">
+        <h1 className=" text-white font-semibold text-2xl">Task List y Task Counter</h1>
+        <TaskList />
+        <TaskCounter />
       </div>
     </div>
   )
